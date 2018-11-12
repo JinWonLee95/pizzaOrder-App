@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하기"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문내역"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_____________________"/>
+
+    <RadioGroup
+        android:id="@+id/pizzas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dominos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도미노 피자"/>
+        <RadioButton
+            android:id="@+id/mr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="미스터 피자"/>
+        <RadioButton
+            android:id="@+id/hut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="피자헛"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="전화주문"/>
+
+    <Button
+        android:id="@+id/internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="인터넷 주문"/>
+
+</LinearLayout>

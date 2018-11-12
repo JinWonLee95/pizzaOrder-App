@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="주문"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/pizzaOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피자" />
+
+        <Button
+            android:id="@+id/pizzaUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/pizzaDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/spaOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스파게티" />
+
+        <Button
+            android:id="@+id/spaUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/spaDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pizzaCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="피자 = 0"/>
+
+    <TextView
+        android:id="@+id/spaCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스파게티 = 0" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인" />
+
+
+</LinearLayout>
